@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-Sp-jax">
+                                <rect key="frame" x="58" y="273" width="204" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="E2J-P3-crk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa de Muncher House, Mr. Brown o McDonalds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-pN-oYj">
+                                <rect key="frame" x="38" y="378" width="244" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="not-gU-504">
+                                <rect key="frame" x="38" y="136" width="244" height="34"/>
+                                <color key="backgroundColor" red="0.62352941179999999" green="0.62745098040000002" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.62352941179999999" green="0.62745098040000002" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="¡Quiero una hamburguesa!">
+                                    <color key="titleColor" red="0.38431372549999998" green="0.3921568627" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.62352941176470589" green="0.62745098039215685" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="darPaisYHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDq-Jg-u4c"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="1Jf-uJ-0iy">
+                                <rect key="frame" x="86" y="20" width="147" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="MJU-6F-yYz"/>
+                                    <constraint firstAttribute="height" constant="108" id="g5K-uD-7Sm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38431372549019605" green="0.39215686274509803" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.38431372549999998" green="0.3921568627" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yOI-Sp-jax" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="0mG-LH-qC4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="not-gU-504" secondAttribute="trailing" constant="22" id="0xk-f2-NHs"/>
+                            <constraint firstItem="yOI-Sp-jax" firstAttribute="centerX" secondItem="not-gU-504" secondAttribute="centerX" id="5Wr-70-UhP"/>
+                            <constraint firstItem="cdR-pN-oYj" firstAttribute="top" secondItem="yOI-Sp-jax" secondAttribute="bottom" constant="84" id="67d-zu-gfx"/>
+                            <constraint firstItem="cdR-pN-oYj" firstAttribute="leading" secondItem="not-gU-504" secondAttribute="leading" id="6wZ-28-3EZ"/>
+                            <constraint firstItem="1Jf-uJ-0iy" firstAttribute="centerX" secondItem="not-gU-504" secondAttribute="centerX" id="9jq-L1-iUD"/>
+                            <constraint firstItem="not-gU-504" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="R1P-o9-AlJ"/>
+                            <constraint firstItem="not-gU-504" firstAttribute="top" secondItem="1Jf-uJ-0iy" secondAttribute="bottom" constant="8" symbolic="YES" id="cR9-Qz-NRm"/>
+                            <constraint firstItem="cdR-pN-oYj" firstAttribute="trailing" secondItem="not-gU-504" secondAttribute="trailing" id="iC8-eS-5t6"/>
+                            <constraint firstItem="not-gU-504" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="ndJ-1Z-m1u"/>
+                            <constraint firstItem="yOI-Sp-jax" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s4A-0H-Ysn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cdR-pN-oYj" secondAttribute="bottom" constant="98" id="tPO-w8-aWV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburguesa" destination="cdR-pN-oYj" id="sSq-9X-P0P"/>
+                        <outlet property="pais" destination="yOI-Sp-jax" id="7cl-dL-40n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburger" width="800" height="695"/>
+    </resources>
+</document>
